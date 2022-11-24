@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> My projects </title>
+    <style>
+        * {
+            background-color: aliceblue;
+            margin: 10px;
+        }
+
+        #home {
+            float: inline-start;
+            position: relative;
+            left: 450px;
+            top: -30px;
+            font-weight: bold;
+        }
+
+        #github {
+            float: inline-start;
+            position: relative;
+            left: 450px;
+            top: -30px;
+            font-weight: bold;
+        }
+        #personalProject {
+            float: inline-start;
+            position: relative;
+            left: 450px;
+            top: -30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:brown"> My Projects </h1>
+    <div Id="home"> <a href="index.html"> Home Page </a> </div>
+    <div id="github"> <a href="https://github.com/lizgarciao/School-projects.git"> Github</a></div>
+    <div id="personalProject"><a href = "#personal"> Jump to Personal Projects </a></div>
+    <h2 style= "color:rgb(196, 34, 147)"> School Projects:</h2>
+
+    <h3> COS 126: Computer Science: An Interdisciplinary Approach
+        (in Java); Fall 2021.</h3>
+    <ol>
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <strong> Machine
+                    Learning Classifier
+                </strong> </p>
+            <p> Designed a program to classify images using the
+                perceptron algorithm.</p>
+        </li>
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <strong> TSP
+                </strong> </p>
+            <p> Implemented two greedy heuristics to find good
+                (but not optimal) solutions
+                to the traveling salesperson problem. </p>
+    </ol>
+
+    <h3> COS 226: Algorithms and Data Structures (in Java); Spring 2022.</h3>
+    <ol>
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <strong>Percolation</strong></p>
+            <p><strong>Goal:</strong>A program that estimates the value
+                of the<em>percolation threshold</em>
+                via Monte Carlo simulation. This program is a model that
+                can be applied to
+                real-life purposes, such as: given a porous landscape
+                with water on the surface (or oil below),
+                under what conditions will the water be able to drain
+                through to the bottom (or the oil to
+                gush through to the surface)? </p>
+
+            <p> <strong>Details:</strong>The Monte Carlo simulation
+                consists of two conditions:
+                1) intializing all sites to be blocked. 2) repeating
+                the following until the system percolates:
+                choose a site uniformly at random among all blocked
+                sites; then open that site.
+                The fraction of opened sites when the system percolates
+                provides an estimate of the
+                percolation threshold. </p>
+        </li>
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <strong>Autocomplete</strong> </p>
+        </li>
+        <p> <strong> Goal:</strong>Built a program in collaboration with
+            a classmate that performs the function of
+            auto-completion
+            employed by modern applications, such as web browsers.</p>
+        <p><strong> Details:</strong> Given a prefix, the program finds
+            all queries that start with the given prefix and
+            predicts how likely it is that the user is typing each query,
+            presenting to the user a list of the top-matching queries in
+            descending order of weight. This was
+            implemented by sorting the terms by query string; binary
+            searching to find all query strings that start with
+            a given prefix; and sorting the matching terms by weight.
+            The weight indicates how likely
+            a word is the one that the user intends to write.</p>
+
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <strong> WordNet</strong> </p>
+        </li>
+        <p><strong> Goal:</strong> To measure the relatedness of two nouns
+            using the WordNet diagraph.</p>
+        <p> <strong> Details: </strong> Wordnet groups words into sets of
+            synonyms called <em> synsets</em>. It also describes semantic
+            relationships between synsets, such as connecting a hyponym (more specific
+            synset) to a hypernym (more general synset). For example, the
+            hyponym synset {gate, logic gate} is a hypernym of {AND circuit, AND
+            gate} because an AND gate is a type of logic gate.
+            The built WordNet diagraph has
+            each vertex v as an integer that represents a synset, and each directed
+            edge v --> w represents that w is a hypernym of v. The diagraph is a
+            <em>rooted DAG</em>, which means that it is acyclic and has
+            one vertex - the root - that is an ancestor of
+            every other vertex. However, it is not
+            necessarily a tree because a synset can have more than one hypernym.
+        </p>
+
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <strong>Seam Carving </strong> </p>
+        </li>
+        <p> <strong> Goal:</strong> Implement a content-aware image resizing
+            algorithm. This algorithm is a core feature in Adobe Photoshop
+            and other computer graphics applications.</p>
+        <p> <strong> Details:</strong> To resize images without significantly
+            losing the picture quality, this program preserves the most important
+            features (aspect ratio, set of objects present, etc) of the image.
+            It accomplishes doing so by: 1) computing the energy of every pixel
+            in the image, using the dual-gradient energy function; 2) finding a
+            vertical or horizontal seam with minimum energy. A seam consists of
+            pixels connected together across the image, either horizontally or
+            vertically; 3) removing all of the pixels along the vertical
+            or horizontal seam.
+        </p>
+
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <strong>Burrows-Wheeler</strong> </p>
+        </li>
+        <p> <strong>Goal:</strong> Implement the Burrows-Wheeler algorithm for
+            data compression, which presently forms the basis of the Unix compression
+            utility bzip2.</p>
+        <p> <strong>Details:</strong> The Burrows-Wheeler data compression algorithm
+            consists of three algorithmic components, which are applied in succession: 1)
+            Burrows-Wheeler transform, which transforms a typical English text file into
+            a file in which sequences of the same character occur near each other many times.
+            2) Move-to-front encoding, which converts the processed text file from step 1
+            into a file in which certain characters appear much more frequently than others.
+            3) Huffman compression- compresses the processed file from step 2 by encoding
+            frequently occurring characters with short codewords and infrequently occurring
+            characters with long codewords. I implemented the first two steps. Step 1 and 2
+            make the huffman compression particularly effective because they produce a text
+            file in which certain characters appear much more frequently than others.</p>
+    </ol>
+
+    <break></break>
+
+    <h3> COS 217: Introduction to Programming Systems; Fall 2022.</h3>
+    <ol>
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <strong> Decomment</strong> </p>
+        </li>
+        <p> <strong> Goal: </strong> To implement details of the "de-commenting" task
+            of the C preprocessor to better understand how it works.</p>
+        <p> <strong> Details:</strong> Using a DFA designed with the required logic
+            for all of the various functionalities and conditions that the program should
+            take into consideration after reading each character from stdin
+            from a given text file, this de-commenting
+            program replaces comments outside string and character
+            literals with a space character and newline characters as originally found
+            in the comment in order to preserve line numbering. Returns 0 (EXIT_SUCCESS)
+            if there are no unterminated comments outside string and character literals;
+            otherwise returns EXIT_FAILURE with an error message to stderr.</p>
+        </li>
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <strong> String Module
+                    and Client </strong> </p>
+        </li>
+        <p> <b>Goal:</b> Use arrays and pointers in the C programming
+            language, use stateless modules in C, utilize the
+            design by contract style of programming, and use the Linux
+            operating system and the GNU programming tools, especially
+            bash, emacs and gdb.
+        </p>
+        <p> <b> Details:</b> Composed a str module containing versions
+            of the most commonly used standard string handling functions
+            in the C language. Specifically, desgined an str module that
+            contains these functions, each of which behaves the same
+            as the corresponding standard C functions: strlen, strcpy,
+            strcat, strcmp, and strstr.
+        </p>
+
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <b>Symbol Table ADT</b> </p>
+        </li>
+        <p> <b> Goal:</b> Use dynamic memory management, create abstract
+            data types (ADTs) in C, and gain more experience with
+            the Linux operating system and the GNU programming tools,
+            such as bash, gdb and make.</p>
+        <p> <b> Details:</b> Implement two versions of symbol table, an unordered
+            collection of bindings, one using arrays and another using linked lists.
+            A binding consists of a key and a value.
+            A key is a string that uniquely identifies its binding; a value is
+            data that is somehow pertinent to its key. A symbol table allows its
+            client to insert (put) new bindings, to retrive (get) the values of
+            bindings with specified keys, and to remove bindings with specified keys.
+            Symbol tables are used often in programming systems; compilers, assemblers,
+            and execution profilers use them extensively. </p>
+
+        <li>
+            <p style="color:rgb(14, 14, 183)"> <b>Directory and
+                    File Tree Abstract Objects</b></p>
+        </li>
+        <p> <b> Goal:</b> The purpose of this project was: </p>
+        <ol type="a">
+            <li> To read substantial amounts of code that I
+                did not write and to get up to speed on the codebase
+                quickly.
+            </li>
+            <li> To debug with a structured, systematic approach. </li>
+            <li> To design thorough internal testing, particularly
+                relating to representation invariants of a datatype
+                (i.e., the characteristics of the internal state of a
+                data structure that result in invalid instances of it).
+            </li>
+            <li> To create new implementations for a given interface
+                and making sensible design decisions about program
+                structure and modularity.
+            </li>
+        </ol>
+        <p> <b> Details:</b> For the last portion of this project, I
+            created a new implementation for the given interface. This new
+            implementation consisted of expanding upon the directory tree (DT) interface
+            to a file tree (FT); FT is an entension of a DT in which leaves may now
+            represent either an empty directory or a file. The difference between a
+            file and a directory is that a file can contain data of any type and
+            cannot have any child nodes, while a directory cannot have data but can
+            have child nodes. The root is the only directory node that has no parent.</p>
+
+    </ol>
+
+
+    <h2 style="color:rgb(196, 34, 147)" id = "personal"> Personal Projects: </h2>
+    <ol>
+        <li>
+            <b> Photo album of alphabet on Princeton Campus:</b> created
+            a website in collaboration with members in the Daily 
+            Princetonian Web Design team for photos taken around Campus
+            that make up a photo album of the alphabet letters.
+        </li>
+        <b> Importance:</b> Put into practice CSS and HTML skills that 
+        I learned on my own time during the summer of 2021.
+       
+    </ol>
+</body>
+
+</html>
