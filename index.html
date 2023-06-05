@@ -5,19 +5,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href = "{{ url_for('static', filename='css/bootstrap.min.css')}}">
-
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css')}}">
-
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-training-studio.css')}}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
         <style>
         #title {
-            color:#a52a2a
-        }
-
-        #projects {
-            font-weight: bold;
+            color:#a52a2a;
         }
         .center {
             display: block;
@@ -32,37 +24,41 @@
             font-weight: bold;
         }
 
-        * {
-            background-color:aliceblue;
-            margin: 10px;
-        }
+        /* #content {
+            margin-left: 1%;
+        } */
 
         </style>
     </head>
 
-    <body>
+    <body class="p-3 m-3 border-0 bd-example">
 
-        <!-- ***** Header Area Start ***** -->
-      <header class="header-area header-sticky background-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a id= "projects" href="projects.html"> Projects </a></li>
-                        </ul>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
+    <!-- Nav bar-->
+
+        <nav class="navbar navbar-expand-sm" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+            <h1 id="title"> Liz's Portfolio </h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" class="nav-links" href="projects.html"> Projects </a>
+                </li>
+                </ul>
             </div>
-        </div>
-    </header>
-     <!-- ***** Header Area End ***** -->
+            </div>
+        </nav>
 
-        <h1 id="title"> Liz's Portfolio </h1>
-        <a id= "projects" href="projects.html"> Projects </a>
+      <!-- Nav bar -->
 
+        <br>
+
+        <div id="content">
         <section>
             <h2> About me:</h2>
             <p> Hi! I am Liz García, a student from Princeton University.
@@ -82,13 +78,23 @@
         <section>
             <h2> Technical Skills: </h2>
             <ol>
-                <p Id= "head"> Proficient :</p>
+                <p id= "head"> Proficient :</p>
+                <li> Python </li>
                 <li> Java </li>
                 <li> C </li>
-                <p Id="head"> Beginner:</p>
                 <li> HTML </li>
                 <li> CSS </li>
+                <li> PostgreSQL</li>
+                <li> Flask </li>
+                <li> Render </li>
+                <li> AJAX</li>
+                <li> Bootstrap</li>
+            </ol>
+
+            <ol>
+                <p id="head"> Working Knowledge:</p>
                 <li> JavaScript </li>
+                <li> J-Query</li>
             </ol>
         </section>
 
@@ -101,6 +107,10 @@
                     <li>  <a href="mailto:lg6248@princeton.edu"> Email</a> </li>
                 </ul>
         </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 
     </body>
