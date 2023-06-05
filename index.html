@@ -5,6 +5,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href = "{{ url_for('static', filename='css/bootstrap.min.css')}}">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css')}}">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-training-studio.css')}}">
+
         <style>
         #title {
             color:#a52a2a
@@ -44,12 +50,8 @@
                     <nav class="main-nav">
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <!-- <li class="scroll-to-section"><a href="#top" class="active">Home</a></li> -->
                             <li><a id= "projects" href="projects.html"> Projects </a></li>
                         </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
                         <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
