@@ -1,0 +1,62 @@
+
+* {
+    margin: 10px;
+}
+
+#home {
+    float: inline-start;
+    position: relative;
+    left: 450px;
+    top: -30px;
+    font-weight: bold;
+}
+
+#github {
+    float: inline-start;
+    position: relative;
+    left: 450px;
+    top: -30px;
+    font-weight: bold;
+}
+
+#personalProject {
+    float: inline-start;
+    position: relative;
+    left: 450px;
+    top: -30px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: rgb(12, 12, 199);
+}
+
+nav div ul li {
+    margin-right: 30px;
+    font-weight: 700;
+}
+
+table, td, th {
+border: 1px solid #000000;
+}
+
+th, td {
+    padding: 15px;
+}
+
+caption {
+    caption-side: top;
+}
+
+#end {
+background-color: rgb(219, 237, 247);
+padding: 4%;
+text-align: center;
+}
+
+.icons {
+    margin-right: 2em;
+    position: relative;
+    left: 1%;
+}
+
